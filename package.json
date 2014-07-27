@@ -1,7 +1,7 @@
 {
   "name": "url-nopunycode",
   "description": "A clone of defunctzombie/node-url without punycode support",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "dependencies": {
     "querystring-es3": "^0.2.1-0"
   },
