@@ -95,7 +95,7 @@ var protocolPattern = /^([a-z0-9.+-]+:)/i,
       'gopher:': true,
       'file:': true
     },
-    querystring = require('querystring');
+    querystring = require('querystring-es3');
 
 function urlParse(url, parseQueryString, slashesDenoteHost) {
   if (url && isObject(url) && url instanceof Url) return url;
