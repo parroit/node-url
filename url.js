@@ -19,7 +19,11 @@
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 // USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-var punycode = require('punycode');
+var punycode = {
+  encode: function(){
+    throw new Error('punycode not supported');
+  }
+};
 
 exports.parse = urlParse;
 exports.resolve = urlResolve;

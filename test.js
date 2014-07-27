@@ -441,79 +441,8 @@ var parseTests = {
     'path': '/bar'
   },
 
-  // IDNA tests
-  'http://www.日本語.com/' : {
-    'href': 'http://www.xn--wgv71a119e.com/',
-    'protocol': 'http:',
-    'slashes': true,
-    'host': 'www.xn--wgv71a119e.com',
-    'hostname': 'www.xn--wgv71a119e.com',
-    'pathname': '/',
-    'path': '/'
-  },
+ 
 
-  'http://example.Bücher.com/' : {
-    'href': 'http://example.xn--bcher-kva.com/',
-    'protocol': 'http:',
-    'slashes': true,
-    'host': 'example.xn--bcher-kva.com',
-    'hostname': 'example.xn--bcher-kva.com',
-    'pathname': '/',
-    'path': '/'
-  },
-
-  'http://www.Äffchen.com/' : {
-    'href': 'http://www.xn--ffchen-9ta.com/',
-    'protocol': 'http:',
-    'slashes': true,
-    'host': 'www.xn--ffchen-9ta.com',
-    'hostname': 'www.xn--ffchen-9ta.com',
-    'pathname': '/',
-    'path': '/'
-  },
-
-  'http://www.Äffchen.cOm*A/b/c?d=e#f g<h>i' : {
-    'href': 'http://www.xn--ffchen-9ta.com/*A/b/c?d=e#f%20g%3Ch%3Ei',
-    'protocol': 'http:',
-    'slashes': true,
-    'host': 'www.xn--ffchen-9ta.com',
-    'hostname': 'www.xn--ffchen-9ta.com',
-    'pathname': '/*A/b/c',
-    'search': '?d=e',
-    'query': 'd=e',
-    'hash': '#f%20g%3Ch%3Ei',
-    'path': '/*A/b/c?d=e'
-  },
-
-  'http://SÉLIER.COM/' : {
-    'href': 'http://xn--slier-bsa.com/',
-    'protocol': 'http:',
-    'slashes': true,
-    'host': 'xn--slier-bsa.com',
-    'hostname': 'xn--slier-bsa.com',
-    'pathname': '/',
-    'path': '/'
-  },
-
-  'http://ليهمابتكلموشعربي؟.ي؟/' : {
-    'href': 'http://xn--egbpdaj6bu4bxfgehfvwxn.xn--egb9f/',
-    'protocol': 'http:',
-    'slashes': true,
-    'host': 'xn--egbpdaj6bu4bxfgehfvwxn.xn--egb9f',
-    'hostname': 'xn--egbpdaj6bu4bxfgehfvwxn.xn--egb9f',
-    'pathname': '/',
-    'path': '/'
-  },
-
-  'http://➡.ws/➡' : {
-    'href': 'http://xn--hgi.ws/➡',
-    'protocol': 'http:',
-    'slashes': true,
-    'host': 'xn--hgi.ws',
-    'hostname': 'xn--hgi.ws',
-    'pathname': '/➡',
-    'path': '/➡'
-  },
 
   'http://bucket_name.s3.amazonaws.com/image.jpg': {
     protocol: 'http:',
